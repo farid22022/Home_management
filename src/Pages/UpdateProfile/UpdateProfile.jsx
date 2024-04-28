@@ -16,8 +16,8 @@ const UpdateProfile = () => {
         }
       </figure>
       <div className="">
-        <h2 className="">Name:  {user.name}</h2>
-        <p className="text-xl">Email : {user.email}</p>
+        <h2 className="p-4">Name:  {user.name}</h2>
+        <p className="text-2xl p-4">Email : {user.email}</p>
       </div>
     </div>
   );

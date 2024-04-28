@@ -11,7 +11,6 @@ const Root = () => {
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
-            <h2>This is root</h2>
         </div>
     );
 };
