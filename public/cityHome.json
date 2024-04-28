@@ -1,0 +1,123 @@
+[
+    {
+      "townhouse_id": 1,
+      "address": "123 Main Street",
+      "city": "Exampleville",
+      "state": "California",
+      "zip_code": "12345",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1800,
+      "price": 250000,
+      "picture": "https://i.ibb.co/jRn4ZPW/city-Home2.jpg"
+    },
+    {
+      "townhouse_id": 2,
+      "address": "456 Elm Street",
+      "city": "Sampletown",
+      "state": "Texas",
+      "zip_code": "54321",
+      "bedrooms": 2,
+      "bathrooms": 2.5,
+      "square_feet": 1600,
+      "price": 220000,
+      "picture": "https://i.ibb.co/jRn4ZPW/city-Home2.jpg"
+    },
+    {
+      "townhouse_id": 3,
+      "address": "789 Oak Street",
+      "city": "Model City",
+      "state": "New York",
+      "zip_code": "98765",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "square_feet": 2200,
+      "price": 300000,
+      "picture": "https://i.ibb.co/jfjHjLN/city-Home3.jpg"
+    },
+    {
+      "townhouse_id": 4,
+      "address": "321 Pine Avenue",
+      "city": "Sampleville",
+      "state": "Florida",
+      "zip_code": "54321",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "square_feet": 1900,
+      "price": 270000,
+      "picture": "https://i.ibb.co/8sZP48h/ciity-Home4.jpg"
+    },
+    {
+      "townhouse_id": 5,
+      "address": "654 Cedar Lane",
+      "city": "Townsville",
+      "state": "Arizona",
+      "zip_code": "67890",
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "square_feet": 1500,
+      "price": 200000,
+      "picture": "https://example.com/townhouse5.jpg"
+    },
+    {
+      "townhouse_id": 6,
+      "address": "987 Maple Drive",
+      "city": "Mapleton",
+      "state": "Illinois",
+      "zip_code": "54321",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1700,
+      "price": 240000,
+      "picture": "https://i.ibb.co/1nhqtp7/city-Home6.jpg"
+    },
+    {
+      "townhouse_id": 7,
+      "address": "246 Birch Street",
+      "city": "Oakville",
+      "state": "Ohio",
+      "zip_code": "13579",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "square_feet": 1400,
+      "price": 180000,
+      "picture": "https://i.ibb.co/nbRgLJg/city-Home7.jpg"
+    },
+    {
+      "townhouse_id": 8,
+      "address": "135 Walnut Lane",
+      "city": "Hometown",
+      "state": "Georgia",
+      "zip_code": "97531",
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "square_feet": 2300,
+      "price": 320000,
+      "picture": "https://i.ibb.co/9p06hgd/city-Home8.jpg"
+    },
+    {
+      "townhouse_id": 9,
+      "address": "369 Chestnut Avenue",
+      "city": "River City",
+      "state": "Washington",
+      "zip_code": "24680",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "square_feet": 1800,
+      "price": 260000,
+      "picture": "https://i.ibb.co/1Z4ySRw/city-Home9.jpg"
+    },
+    {
+      "townhouse_id": 10,
+      "address": "579 Cherry Lane",
+      "city": "Gardentown",
+      "state": "Oregon",
+      "zip_code": "86420",
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "square_feet": 1600,
+      "price": 210000,
+      "picture": "https://example.com/townhouse10.jpg"
+    }
+]
+  
