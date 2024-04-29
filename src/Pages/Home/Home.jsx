@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../Shared/Banner/Banner";
 import HomeCard from "../HomeCard/HomeCard";
-
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -12,6 +12,9 @@ const Home = () => {
     console.log(homes);
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <Banner></Banner>
             <div className="grid-cols-1">
             

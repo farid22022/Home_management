@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredHome } from "../../Utility/LocalStorageCityHome";
 import BroughtHome from "../BroughtHome/BroughtHome";
 import 'animate.css';
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
 
@@ -29,6 +30,11 @@ const UserProfile = () => {
 
   return (
     <div className="text-center card w-full bg-base-100 shadow-xl">
+      <Helmet>
+        <title>
+          User Profile
+        </title>
+      </Helmet>
       <figure>
         {
             user?

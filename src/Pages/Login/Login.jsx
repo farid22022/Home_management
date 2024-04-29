@@ -4,6 +4,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub , FaFacebook } from "react-icons/fa6";
 import {  } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -46,6 +47,11 @@ const Login = () => {
   }
   return (
     <div>
+      <Helmet>
+        <title>
+          Login
+        </title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">

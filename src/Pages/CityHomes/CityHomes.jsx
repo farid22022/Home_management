@@ -1,6 +1,7 @@
 import { } from "react-router-dom";
 import CityHome from "../CityHome/CityHome";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 const CityHomes = () => {
@@ -16,7 +17,9 @@ const CityHomes = () => {
     return (
         
         <div>
-            
+            <Helmet>
+                <title>Town Home</title>
+            </Helmet>
             <div className="grid md:grid-cols-3 space-x-3 space-y-2">
             {
                 cityHomes.map(cityHome =><CityHome key={cityHome.townhouse_id} cityHome={cityHome}></CityHome>)
