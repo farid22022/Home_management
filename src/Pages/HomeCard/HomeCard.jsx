@@ -23,12 +23,12 @@ const HomeCard = ({ home }) => {
         </Marquee>
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{segment_name}</h2>
-        <p>{status}</p>
+        <h2 className="card-title "> Name : <span className=" text-teal-500">{segment_name}</span></h2>
+        <p className="text-red-900 text-2xl font-extrabold"> {status}</p>
         <h2>Total area:{area}</h2>
         <ul>
           {facilities.map((facility, index) => (
-            <li key={index}>{index+1}) {facility}</li>
+            <li className="text-violet-700" key={index}>{index+1}) {facility}</li>
           ))}
         </ul>
         <div className="card-actions justify-end">
