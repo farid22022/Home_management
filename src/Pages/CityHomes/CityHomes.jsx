@@ -20,7 +20,7 @@ const CityHomes = () => {
             <Helmet>
                 <title>Town Home</title>
             </Helmet>
-            <div className="grid md:grid-cols-3 space-x-3 space-y-2">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1 space-x-3 space-y-2">
             {
                 cityHomes.map(cityHome =><CityHome key={cityHome.townhouse_id} cityHome={cityHome}></CityHome>)
             }

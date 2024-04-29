@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full">
+      <div className="carousel w-full" data-aos="flip-up">
         <div id="item1" className="carousel-item w-full">
           <img
             src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"

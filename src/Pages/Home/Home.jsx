@@ -18,7 +18,7 @@ const Home = () => {
             <Banner></Banner>
             <div className="grid-cols-1">
             
-            <div className="grid md:grid-cols-3 mt-6 space-x-6 space-y-4">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-6 space-x-6 space-y-4">
                 {
                     homes.map(home =><HomeCard 
                         key={home.id} 

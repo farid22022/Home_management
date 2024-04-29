@@ -45,7 +45,7 @@ const UserProfile = () => {
       </figure>
       <div className="">
         {/* <h2 className="p-4">Name:  {user.name}</h2> */}
-        <p className="text-2xl p-4 animate__animated animate__bounce animate__repeat-2">Email : {user.email}</p>
+        <p className="text-2xl p-4 animate__animated animate__bounce animate__repeat-2 text-emerald-700 font-semibold">Email : <span className="text-violet-900">{user.email}</span></p>
       </div>
       <div className="border-green-500">
           {

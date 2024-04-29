@@ -19,11 +19,20 @@ const CityHome = ({ cityHome }) => {
     <Link to={`/cityhomecard/${townhouse_id}`}>
       <div className="card bg-base-100 shadow-xl" data-aos="flip-left">
       <figure>
-        <img
-          className="w-"
-          src={picture}
-          alt="Shoes"
-        />
+        {
+          picture?
+          <img
+        
+            className="w-48 h-28"
+            src={picture}
+            alt="home"
+          />
+          :
+          <div>
+            <span className="loading loading-spinner text-error"></span>
+            <h2>Image is loading</h2>
+          </div>
+        }
       </figure>
       <div className="card-body">
         <h2 className="card-title">{address}</h2>
