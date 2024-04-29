@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="grid grid-cols-1">
-              <div tabIndex={0} role="button" className="w-20 btn btn-ghost btn-circle avatar relative">
+              <div tabIndex={0} role="button" className="w-20 btn btn-ghost btn-circle avatar relative z-10">
                   <div className=" rounded-full">
                     {
                       user ?

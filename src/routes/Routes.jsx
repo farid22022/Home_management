@@ -11,6 +11,8 @@ import PrivateRoute from "./PrivateRoute";
 import SelectedHomeCard from "../Pages/SelectedHomeCard/SelectedHomeCard";
 
 
+
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -53,7 +55,11 @@ const router = createBrowserRouter([
                 path:"/selectedhomecard/:id",
                 element:<SelectedHomeCard></SelectedHomeCard>,
                 loader: () => fetch('/home.json')
-            }
+            },
+            // {
+            //     path: "/leaf",
+            //     element: <Leaf></Leaf>
+            // }
         ]
     }
 ]);
