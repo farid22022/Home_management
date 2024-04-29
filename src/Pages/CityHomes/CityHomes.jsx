@@ -14,10 +14,14 @@ const CityHomes = () => {
     }, [])
 
     return (
-        <div className="grid md:grid-cols-3 space-x-3 space-y-2">
+        
+        <div>
+            
+            <div className="grid md:grid-cols-3 space-x-3 space-y-2">
             {
                 cityHomes.map(cityHome =><CityHome key={cityHome.townhouse_id} cityHome={cityHome}></CityHome>)
             }
+        </div>
         </div>
     );
 };

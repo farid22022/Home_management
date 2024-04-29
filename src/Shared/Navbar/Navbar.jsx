@@ -2,11 +2,14 @@ import { Link, NavLink } from "react-router-dom";
 import profilePic from "../../../public/profile.png"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Marquee from "react-fast-marquee";
 
 
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+
+    // console.log(user.photoURL);
     
     const handleSignOut = () =>{
         logOut()
@@ -16,13 +19,15 @@ const Navbar = () => {
     console.log(user);
 
     const navLinks = <>
-        <li><a><NavLink to="/">Home</NavLink></a></li>
-        <li><a><NavLink to="/updateprofile">Update Profile</NavLink></a></li>
-        <li><a><NavLink to="/">User Profile</NavLink></a></li>
+        <li className="font-serif"><a><NavLink to="/">Home</NavLink></a></li>
+        {
+          user && <li className="font-serif"><a><NavLink to="/userprofile">User Profile</NavLink></a></li>
+        }
+        <li className="font-serif"><a><NavLink to="/updateprofile">Update Profile</NavLink></a></li>
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mt-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,25 +62,38 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="grid grid-cols-1">
-              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                  <div className="w-10 rounded-full">
-                  {
-                    user ?
-                    
-                    <img alt={user.email} src={user.photoURL} />
-                    :
-                    <img alt="" src={profilePic} />
-                  }
+              <div tabIndex={0} role="button" className="w-20 btn btn-ghost btn-circle avatar relative">
+                  <div className=" rounded-full">
+                    {
+                      user ?
+                      
+                      <div className="grid grid-cols-1">
+                        
+                        <img alt='' src={user.photoURL} />
+                      </div>
+                      :
+                      <img alt="" src={profilePic} />
+                    }
+                  </div>
+                  <div>
+                    {
+                      user?
+                      <Marquee><h2>{user.email} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       </h2></Marquee>
+                      :
+                      <Marquee><h2>No User Found</h2></Marquee>
+                    }
                   </div>
               </div>
-              {
-                user ?
-                <button onClick={handleSignOut} className="btn">Sign Out</button>
-                :
-                <Link to="/login">
-                    <button className="btn btn-secondary">Login</button>
-                </Link>
-              }
+              <div  className="absolute top-60">
+                {
+                  user ?
+                  <button onClick={handleSignOut} className="btn p-1">Sign Out</button>
+                  :
+                  <Link to="/login">
+                      <button className="btn btn-secondary">Login</button>
+                  </Link>
+                }
+              </div>
               
           </div>
         </div>

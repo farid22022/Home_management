@@ -1,20 +1,20 @@
-const getStoredCityHome = () =>{
-    const storedCityHome = localStorage.getItem('city home detailed');
-    if(storedCityHome){
-        return JSON.parse(storedCityHome);
+const getStoredHome = () =>{
+    const storedHome = localStorage.getItem('city home detailed');
+    if(storedHome){
+        return JSON.parse(storedHome);
     }
     return [];
 }
 
 
-const saveCityHomes = id =>{
-    const storedCityHome = getStoredCityHome();
-    const exists = storedCityHome.find(bookId => bookId === id);
+const saveHomes = idInt =>{
+    const storedHome = getStoredHome();
+    const exists = storedHome.find(id => id === idInt);
     if(!exists){
-        storedCityHome.push(id);
-        localStorage.setItem('city home details', JSON.stringify(storedCityHome))
+        storedHome.push(idInt);
+        localStorage.setItem(' home details', JSON.stringify(storedHome))
     }
-    console.log(getStoredCityHome, saveCityHomes)
+    console.log(getStoredHome, saveHomes)
 }
 
-export { getStoredCityHome, saveCityHomes}
+export { getStoredHome, saveHomes}

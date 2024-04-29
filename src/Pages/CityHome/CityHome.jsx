@@ -17,7 +17,7 @@ const CityHome = ({ cityHome }) => {
 // `/cityhomecard/${townhouse_id}`
   return (
     <Link to={`/cityhomecard/${townhouse_id}`}>
-      <div className="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl" data-aos="flip-left">
       <figure>
         <img
           className="w-"

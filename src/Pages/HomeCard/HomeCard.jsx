@@ -1,8 +1,17 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const HomeCard = ({ home }) => {
-  const { segment_name, area, image, status ,facilities} = home;
+  const {id, segment_name, area, image, status ,facilities} = home;
+    useEffect(() => {
+      AOS.init({ duration: "1000" });
+  }, []);
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <Link to={`/selectedhomecard/${id}`}>
+      <div className="card w-96 bg-base-100 shadow-xl" data-aos="flip-left" data-aos-delay="1000" data-aos-anchor=".example-selector">
       <figure>
         <img
           className="shadow-2xl rounded-md"
@@ -20,6 +29,7 @@ const HomeCard = ({ home }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

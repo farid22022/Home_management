@@ -5,7 +5,10 @@ import CityHomes from "../Pages/CityHomes/CityHomes";
 import CityHomeCard from "../Pages/CityHomeCard/CityHomeCard";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import UserProfile from "../Pages/UserProfile/UserProfile";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import PrivateRoute from "./PrivateRoute";
+import SelectedHomeCard from "../Pages/SelectedHomeCard/SelectedHomeCard";
 
 
 const router = createBrowserRouter([
@@ -38,8 +41,18 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: "/updateprofile",
-                element: <UpdateProfile></UpdateProfile>
+                path: "/userprofile",
+                element: <UserProfile></UserProfile>,
+                loader: () => fetch('/home.json')
+            },
+            {
+                path:"/updateprofile",
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+            },
+            {
+                path:"/selectedhomecard/:id",
+                element:<SelectedHomeCard></SelectedHomeCard>,
+                loader: () => fetch('/home.json')
             }
         ]
     }
