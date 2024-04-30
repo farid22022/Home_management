@@ -9,6 +9,7 @@ import UserProfile from "../Pages/UserProfile/UserProfile";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import SelectedHomeCard from "../Pages/SelectedHomeCard/SelectedHomeCard";
+import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element:<Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',

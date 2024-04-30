@@ -1,6 +1,7 @@
 import Marquee from "react-fast-marquee";
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveHomes } from "../../Utility/LocalStorageCityHome";
+import { ToastContainer, toast } from "react-toastify";
 
 const SelectedHomeCard = () => {
 
@@ -11,6 +12,8 @@ const SelectedHomeCard = () => {
 
     const handleSaveHome = () =>{
       saveHomes(idInt);
+      toast("Home details added");
+      console.log(saveHomes);
     }
 
 
@@ -20,7 +23,7 @@ const SelectedHomeCard = () => {
         <img
           className="rounded-md"
           src={selectedHomeCard.image}
-          alt="Shoes"
+          alt=""
         />
       </figure>
       <div className="card-body">
@@ -40,7 +43,9 @@ const SelectedHomeCard = () => {
         <div className="card-actions justify-end">
           <button onClick={handleSaveHome} className="btn btn-primary">Book Now!</button>
         </div>
+        <ToastContainer/>
       </div>
+      
     </div>
   );
 };
